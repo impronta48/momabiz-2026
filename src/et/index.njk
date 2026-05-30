@@ -1,0 +1,211 @@
+---
+layout: layouts/base.njk
+lang: et
+title: "{{ site.siteName.et }}"
+permalink: "/et/"
+---
+<section id="home" class="hero hero-bg py-5">
+  <div class="container-lg">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1 class="display-4 fw-bold">{{ site.translations[lang].homeTitle }}</h1>
+        <p class="lead text-muted">{{ site.translations[lang].homeSubtitle }}</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a class="btn btn-primary btn-lg" href="/{{ '' if lang == 'it' else lang ~ '/' }}{{ site.pages[0].slug }}/">
+            <i class="bi bi-arrow-right"></i> {{ site.translations[lang].homeButton }}
+          </a>
+          <a class="btn btn-outline-primary btn-lg" href="#project-history">
+            <i class="bi bi-chevron-down"></i> Lisateave
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <div style="font-size: 6rem; opacity: 0.1;">
+          <i class="bi bi-speedometer2"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project-history" class="container-lg py-5">
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <h2 class="section-title">{{ site.translations[lang].historyTitle }}</h2>
+      <div style="margin-top: 2rem;">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #475569;">{{ site.translations[lang].historyText }}</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card card-cta">
+        <div class="card-body">
+          <h5 class="card-title mb-3"><i class="bi bi-lightbulb"></i> Innovatsioon</h5>
+          <p class="card-text small">Innovaatilised lahendused jätkusuutlikuks liikumiseks Euroopa tööstuspiikonnadel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="areas" class="py-5">
+  <div class="container-lg">
+    <h2 class="section-title">{{ site.translations[lang].areasTitle }}</h2>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="row g-2">
+          {% for item in site.translations[lang].areasItems %}
+            <div class="col-md-6">
+              <div class="list-group-item">
+                {{ item }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-cta h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="bi bi-geo-alt"></i> 6 Riiki</h5>
+            <p class="card-text small">Osalised selles Euroopa projektis jätkusuutlikust liikumisest.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row g-4 mt-4">
+      <div class="col-lg-6">
+        <div class="card card-cta h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="bi bi-map"></i> Euroopa partnerid</h5>
+            <img src="/assets/images/mappa-partners.jpg" alt="Euroopa partnerite kaart" class="img-fluid" style="max-height: 400px;">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card card-cta h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="bi bi-info-circle"></i> Avastage projekt</h5>
+            <p class="card-text mb-3">MoMa.BIZ projekt koondab 6 Euroopa partnerit, et arendada innovatiivseid lahendusi jätkusuutlikuks liikumiseks tööstuspiikonnadel.</p>
+            <a href="/{{ '' if lang == 'it' else lang ~ '/' }}about/" class="btn btn-primary w-100">
+              <i class="bi bi-book"></i> Lugege projektist
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="boxed" class="container-lg py-5">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <h2 class="section-title">{{ site.translations[lang].mobilityTitle }}</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; color: #475569; margin-top: 2rem;">{{ site.translations[lang].mobilityText }}</p>
+      <p class="text-muted mt-3">{{ site.translations[lang].mobilityExplain }}</p>
+      <a class="btn btn-primary btn-lg w-100 mt-4" href="/{{ '' if lang == 'it' else lang ~ '/' }}{{ site.pages[0].slug }}/">
+        <i class="bi bi-play-circle"></i> {{ site.translations[lang].mobilityButton }}
+      </a>
+    </div>
+    <div class="col-lg-6 text-center">
+      <a href="{{ site.demoUrl }}" target="_blank" rel="noreferrer">
+        <img src="/assets/images/mobility-label.jpg" alt="Mobility Label" class="img-fluid rounded shadow" style="max-height: 380px; transition: transform .3s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <p class="text-muted small mt-2"><i class="bi bi-cursor"></i> Klõpsa pildil demo avamiseks</p>
+    </div>
+  </div>
+</section>
+
+<section id="boxed-solutions" class="py-4" style="background: #f8f9fa; border-top: 1px solid #e2e8f0;">
+  <div class="container-lg">
+    <div class="row align-items-center g-3">
+      <div class="col-auto">
+        <img src="/assets/images/boxed-solutions.jpg" alt="Boxed Solutions" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
+      </div>
+      <div class="col">
+        <h3 class="fw-bold mb-1 fs-5">{{ site.translations[lang].boxedTitle }}</h3>
+        <p class="text-muted mb-0 small">{{ site.translations[lang].boxedIntro }}</p>
+      </div>
+      <div class="col-md-auto text-center text-md-end">
+        <a href="/{{ '' if lang == 'it' else lang ~ '/' }}boxed-solutions/" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-arrow-right"></i> {{ site.translations[lang].boxedMoreButton }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="videos" class="py-4" style="background: #f0fdf4; border-top: 1px solid rgba(16,185,129,.15);">
+  <div class="container-lg">
+    <div class="row align-items-center g-3">
+      <div class="col-auto text-center">
+        <i class="bi bi-youtube" style="font-size: 2.75rem; color: #ff0000;"></i>
+      </div>
+      <div class="col">
+        <h3 class="fw-bold mb-1 fs-5">{{ site.translations[lang].videoTitle }}</h3>
+        <p class="text-muted mb-0 small">{{ site.translations[lang].videoText }}</p>
+      </div>
+      <div class="col-md-auto text-center text-md-end">
+        <a href="https://www.youtube.com/user/momabiz" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger btn-sm">
+          <i class="bi bi-play-circle"></i> {{ site.translations[lang].videoButton }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="drt-conference" class="py-4" style="border-top: 1px solid #e2e8f0;">
+  <div class="container-lg">
+    <div class="row align-items-center g-3">
+      <div class="col-auto text-center">
+        <i class="bi bi-calendar-event" style="font-size: 2.75rem; color: #0d6efd;"></i>
+      </div>
+      <div class="col">
+        <h3 class="fw-bold mb-1 fs-5">{{ site.translations[lang].drtTitle }}</h3>
+        <p class="text-muted mb-0 small">{{ site.translations[lang].drtText }}</p>
+      </div>
+      <div class="col-md-auto text-center text-md-end">
+        <a href="/{{ '' if lang == 'it' else lang ~ '/' }}drt-conference/" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-file-earmark-text"></i> {{ site.translations[lang].drtButton }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partner-cta" class="py-4" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-top: 1px solid rgba(255,255,255,.1);">
+  <div class="container-lg">
+    <div class="row align-items-center g-3">
+      <div class="col-auto text-center">
+        <i class="bi bi-people" style="font-size: 2.75rem; color: #10b981;"></i>
+      </div>
+      <div class="col">
+        <h3 class="fw-bold mb-1 fs-5" style="color: #f1f5f9;">{{ site.translations[lang].partnerCtaTitle }}</h3>
+        <p class="mb-0 small" style="color: #94a3b8;">{{ site.translations[lang].partnerCtaText }}</p>
+      </div>
+      <div class="col-md-auto text-center text-md-end">
+        <a href="https://www.mobilitysquare.eu" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">
+          <i class="bi bi-envelope"></i> {{ site.translations[lang].partnerCtaButton }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="msq-cta" class="py-4" style="background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); border-top: 1px solid rgba(255,255,255,.1);">
+  <div class="container-lg">
+    <div class="row align-items-center g-3">
+      <div class="col-auto text-center">
+        <i class="bi bi-building" style="font-size: 2.75rem; color: #6ee7b7;"></i>
+      </div>
+      <div class="col">
+        <h3 class="fw-bold mb-1 fs-5" style="color: #f1f5f9;">{{ site.translations[lang].msqCtaTitle }}</h3>
+        <p class="mb-0 small" style="color: #a7f3d0;">{{ site.translations[lang].msqCtaText }}</p>
+      </div>
+      <div class="col-md-auto text-center text-md-end">
+        <a href="https://www.mobilitysquare.eu" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm">
+          <i class="bi bi-arrow-up-right-square"></i> {{ site.translations[lang].msqCtaButton }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-lg">
+    <a class="navbar-brand d-flex align-items-center" href="/{{ '' if lang == 'it' else lang ~ '/' }}">      
+      <span>{{ site.siteName[lang] }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/{{ '' if lang == 'it' else lang ~ '/' }}#home">
+            <i class="bi bi-house-heart"></i> {{ site.translations[lang].homeLink }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/{{ '' if lang == 'it' else lang ~ '/' }}#areas">
+            <i class="bi bi-clock-history"></i> {{ site.translations[lang].historyTitle }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/{{ '' if lang == 'it' else lang ~ '/' }}boxed-solutions/">
+            <i class="bi bi-box2-heart"></i> {{ site.translations[lang].boxedTitle }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/{{ '' if lang == 'it' else lang ~ '/' }}{{ site.pages[0].slug }}/">
+            <i class="bi bi-tags"></i> {{ site.pages[0].label[lang] }}
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe"></i> {{ site.translations[lang].languageLabel }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            {% for locale in site.languages %}
+              <li><a class="dropdown-item" href="/{{ '' if locale.code == 'it' else locale.code ~ '/' }}"><i class="bi bi-check-lg"></i> {{ locale.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
