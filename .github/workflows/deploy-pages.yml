@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy MomaBIZ to GitHub Pages
 
 on:
   push:
