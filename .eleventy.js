@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
+  eleventyConfig.addPassthroughCopy({"src/CNAME": "CNAME"});
   eleventyConfig.addPassthroughCopy({"node_modules/bootstrap/dist": "css/bootstrap"});
   eleventyConfig.addPassthroughCopy({"node_modules/bootstrap-icons/font": "fonts/bootstrap-icons"});
 
