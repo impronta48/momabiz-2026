@@ -48,7 +48,7 @@
         margin: 0 0.5rem;
       }
 
-      .nav-link::after {
+      .nav-link:not(.dropdown-toggle)::after {
         content: '';
         position: absolute;
         width: 0;
@@ -59,8 +59,13 @@
         transition: width 0.3s ease;
       }
 
-      .nav-link:hover::after {
+      .nav-link:not(.dropdown-toggle):hover::after {
         width: 100%;
+      }
+
+      .navbar .dropdown-toggle::after {
+        margin-left: 0.35rem;
+        vertical-align: middle;
       }
 
       /* Hero Section */

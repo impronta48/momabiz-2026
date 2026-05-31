@@ -1,0 +1,137 @@
+{
+  "translations": {
+    "it": {
+      "partnersTitle": "Partner del progetto",
+      "partnersIntro": "MoMa.BIZ coinvolge un coordinatore, sei partner territoriali in cui saranno sviluppati i Piani di Mobilita Sostenibile e due partner di sostegno.",
+      "coordinatorTitle": "Coordinatore",
+      "localPartnersTitle": "Citta in cui saranno sviluppati i Piani di Mobilita Sostenibile",
+      "supportPartnersTitle": "Partner di sostegno"
+    },
+    "en": {
+      "partnersTitle": "Project Partners",
+      "partnersIntro": "MoMa.BIZ involves one coordinating partner, six local partners where Sustainable Mobility Plans will be developed, and two supporting partners.",
+      "coordinatorTitle": "Coordinator",
+      "localPartnersTitle": "Cities where Sustainable Mobility Plans will be developed",
+      "supportPartnersTitle": "Supporting partners"
+    },
+    "es": {
+      "partnersTitle": "Socios del proyecto",
+      "partnersIntro": "MoMa.BIZ cuenta con un socio coordinador, seis socios territoriales donde se desarrollaran los Planes de Movilidad Sostenible y dos socios de apoyo.",
+      "coordinatorTitle": "Coordinador",
+      "localPartnersTitle": "Ciudades donde se desarrollaran los Planes de Movilidad Sostenible",
+      "supportPartnersTitle": "Socios de apoyo"
+    },
+    "et": {
+      "partnersTitle": "Projekti partnerid",
+      "partnersIntro": "MoMa.BIZ kaasab uhte koordineerivat partnerit, kuut kohalikku partnerit, kus töötatakse valja jatkusuutliku liikuvuse plaanid, ning kahte tugipartnerit.",
+      "coordinatorTitle": "Koordinaator",
+      "localPartnersTitle": "Linnad, kus töötatakse valja jatkusuutliku liikuvuse plaanid",
+      "supportPartnersTitle": "Tugipartnerid"
+    },
+    "bg": {
+      "partnersTitle": "Партньори по проекта",
+      "partnersIntro": "MoMa.BIZ включва един координиращ партньор, шест местни партньора, в които ще бъдат разработени планове за устойчива мобилност, и двама подкрепящи партньори.",
+      "coordinatorTitle": "Координатор",
+      "localPartnersTitle": "Градове, в които ще бъдат разработени планове за устойчива мобилност",
+      "supportPartnersTitle": "Подкрепящи партньори"
+    }
+  },
+  "partners": {
+    "coordinator": [
+      {
+        "name": "Provincia di Asti",
+        "meta": {
+          "it": "Coordinatore del progetto",
+          "en": "Project coordinator",
+          "es": "Coordinador del proyecto",
+          "et": "Projekti koordinaator",
+          "bg": "Координатор на проекта"
+        }
+      }
+    ],
+    "local": [
+      {
+        "name": "Comune di Asti",
+        "meta": {
+          "it": "Asti, Italia",
+          "en": "Asti, Italy",
+          "es": "Asti, Italia",
+          "et": "Asti, Itaalia",
+          "bg": "Асти, Италия"
+        }
+      },
+      {
+        "name": "Municipality of Tartu",
+        "meta": {
+          "it": "Tartu, Estonia",
+          "en": "Tartu, Estonia",
+          "es": "Tartu, Estonia",
+          "et": "Tartu, Eesti",
+          "bg": "Тарту, Естония"
+        }
+      },
+      {
+        "name": "EAP",
+        "meta": {
+          "it": "Plovdiv, Bulgaria",
+          "en": "Plovdiv, Bulgaria",
+          "es": "Plovdiv, Bulgaria",
+          "et": "Plovdiv, Bulgaaria",
+          "bg": "Пловдив, България"
+        }
+      },
+      {
+        "name": "Alternet",
+        "meta": {
+          "it": "Atarfe, Andalucia, Spagna",
+          "en": "Atarfe, Andalusia, Spain",
+          "es": "Atarfe, Andalucia, Espana",
+          "et": "Atarfe, Andaluusia, Hispaania",
+          "bg": "Атарфе, Андалусия, Испания"
+        }
+      },
+      {
+        "name": "Birmingham Chamber of Commerce in England",
+        "meta": {
+          "it": "Staffordshire, Gran Bretagna",
+          "en": "Staffordshire, Great Britain",
+          "es": "Staffordshire, Gran Bretana",
+          "et": "Staffordshire, Suurbritannia",
+          "bg": "Стафордшър, Великобритания"
+        }
+      },
+      {
+        "name": "EREN",
+        "meta": {
+          "it": "Ponferrada, Spagna",
+          "en": "Ponferrada, Spain",
+          "es": "Ponferrada, Espana",
+          "et": "Ponferrada, Hispaania",
+          "bg": "Понферада, Испания"
+        }
+      }
+    ],
+    "support": [
+      {
+        "name": "iMpronta (Novello)",
+        "meta": {
+          "it": "Organizzazione eventi internazionali ed assistenza per il coordinamento e la valutazione delle azioni",
+          "en": "International event organisation and support for the coordination and evaluation of actions",
+          "es": "Organizacion de eventos internacionales y apoyo para la coordinacion y evaluacion de las acciones",
+          "et": "Rahvusvaheliste sundmuste korraldamine ning tegevuste koordineerimise ja hindamise tugi",
+          "bg": "Организиране на международни събития и подкрепа за координацията и оценката на действията"
+        }
+      },
+      {
+        "name": "ENGIM (Torino)",
+        "meta": {
+          "it": "Formazione",
+          "en": "Training",
+          "es": "Formacion",
+          "et": "Koolitus",
+          "bg": "Обучение"
+        }
+      }
+    ]
+  }
+}

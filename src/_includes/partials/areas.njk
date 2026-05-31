@@ -1,0 +1,30 @@
+<section id="areas" class="py-5">
+  <div class="container-lg">
+    <h2 class="section-title">{{ site.translations[lang].areasTitle }}</h2>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="row g-2">
+          {% for item in site.translations[lang].areasItems %}
+            <div class="col-md-6">
+              <div class="list-group-item">
+                {{ item }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-cta h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-3"><i class="bi bi-geo-alt"></i> {{ site.translations[lang].areasCardTitle }}</h5>
+            <p class="card-text small">{{ site.translations[lang].areasCardText }}</p>
+            <img src="/assets/images/mappa-partners.jpg" alt="{{ site.translations[lang].areasMapAlt }}" class="img-fluid mt-2" style="max-height: 400px;">
+            <a href="/{{ '' if lang == 'it' else lang ~ '/' }}about/" class="btn btn-primary w-100 mt-3">
+              <i class="bi bi-book"></i> {{ site.translations[lang].areasAboutButton }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

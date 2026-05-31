@@ -1,0 +1,7 @@
+{% set aboutDetailsPath = "content/about/how-it-works." ~ lang ~ ".md" %}
+{% set aboutDetails %}
+{% include aboutDetailsPath %}
+{% endset %}
+<div class="mt-5">
+  {{ aboutDetails | markdown | safe }}
+</div>

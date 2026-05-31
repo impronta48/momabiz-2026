@@ -14,7 +14,7 @@ permalink: "/about/"
       <div style="margin-top: 2rem;">
         <p style="font-size: 1.1rem; line-height: 1.8; color: #475569;">{{ site.translations[lang].historyText }}</p>
         
-        <h2 class="mt-5 mb-3">Cosa facciamo</h2>
+        <h2 class="mt-5 mb-3">Che cosa è stato fatto</h2>
         <p>MoMa.BIZ crea soluzioni pratiche e replicabili per la mobilità sostenibile nelle aree industriali. Il nostro approccio combina:</p>
         <ul class="list-group list-group-flush mt-3">
           <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i> <strong>Ricerca partecipata</strong> con lavoratori e aziende</li>
@@ -22,59 +22,9 @@ permalink: "/about/"
           <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i> <strong>Formazione specializzata</strong> per mobility manager</li>
           <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i> <strong>Soluzioni pronte</strong> nelle Boxed Solutions</li>
         </ul>
-        
-        <h2 class="mt-5 mb-3">Partner del progetto</h2>
-        <p>Il progetto coinvolge 6 partner europei:</p>
-        <div class="row g-3 mt-3">
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">ENGIM Piemonte</h5>
-                <p class="card-text small">Coordinatore - Italia</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">Regione Piemonte</h5>
-                <p class="card-text small">Partner - Italia</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">CEiiA</h5>
-                <p class="card-text small">Partner - Portogallo</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">IMOT</h5>
-                <p class="card-text small">Partner - Bulgaria</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">Provincia di Valladolid</h5>
-                <p class="card-text small">Partner - Spagna</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-cta h-100">
-              <div class="card-body">
-                <h5 class="card-title">Regional Competence Centre</h5>
-                <p class="card-text small">Partner - Estonia</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        {% include "partials/about-details.njk" %}
+        {% include "partials/about-partners.njk" %}
       </div>
     </div>
     

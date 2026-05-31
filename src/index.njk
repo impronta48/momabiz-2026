@@ -45,32 +45,7 @@ permalink: "/"
   </div>
 </section>
 
-<section id="areas" class="py-5">
-  <div class="container-lg">
-    <h2 class="section-title">{{ site.translations[lang].areasTitle }}</h2>
-    <div class="row g-4">
-      <div class="col-lg-8">
-        <div class="row g-2">
-          {% for item in site.translations[lang].areasItems %}
-            <div class="col-md-6">
-              <div class="list-group-item">
-                {{ item }}
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-cta h-100">
-          <div class="card-body">
-            <h5 class="card-title mb-3"><i class="bi bi-geo-alt"></i> 6 Paesi</h5>
-            <p class="card-text small">Coinvolti in questo progetto europeo per mobilità sostenibile nelle aree industriali.</p>
-            <img src="/assets/images/mappa-partners.jpg" alt="Mappa partner europei" class="img-fluid" style="max-height: 400px;">
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+{% include "partials/areas.njk" %}
 
 <section id="boxed" class="container-lg py-5">
   <div class="row g-4 align-items-center">

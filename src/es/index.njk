@@ -47,54 +47,7 @@ permalink: "/es/"
   </div>
 </section>
 
-<section id="areas" class="py-5">
-  <div class="container-lg">
-    <h2 class="section-title">{{ site.translations[lang].areasTitle }}</h2>
-    <div class="row g-4">
-      <div class="col-lg-8">
-        <div class="row g-2">
-          {% for item in site.translations[lang].areasItems %}
-            <div class="col-md-6">
-              <div class="list-group-item">
-                {{ item }}
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-cta h-100">
-          <div class="card-body">
-            <h5 class="card-title mb-3"><i class="bi bi-geo-alt"></i> 6 Países</h5>
-            <p class="card-text small">Involucrados en este proyecto europeo para la movilidad sostenible.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row g-4 mt-4">
-      <div class="col-lg-6">
-        <div class="card card-cta h-100">
-          <div class="card-body">
-            <h5 class="card-title mb-3"><i class="bi bi-map"></i> Socios europeos</h5>
-            <img src="/assets/images/mappa-partners.jpg" alt="Mapa de socios europeos" class="img-fluid" style="max-height: 400px;">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card card-cta h-100">
-          <div class="card-body">
-            <h5 class="card-title mb-3"><i class="bi bi-info-circle"></i> Descubre el proyecto</h5>
-            <p class="card-text mb-3">El proyecto MoMa.BIZ reúne a 6 socios europeos para desarrollar soluciones innovadoras para la movilidad sostenible en zonas industriales.</p>
-            <a href="/{{ '' if lang == 'it' else lang ~ '/' }}about/" class="btn btn-primary w-100">
-              <i class="bi bi-book"></i> Lee sobre el proyecto
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include "partials/areas.njk" %}
 
 <section id="boxed" class="container-lg py-5">
   <div class="row g-4 align-items-center">

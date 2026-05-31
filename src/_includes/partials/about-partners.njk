@@ -1,0 +1,44 @@
+<h2 class="mt-5 mb-3">{{ about.translations[lang].partnersTitle }}</h2>
+<p>{{ about.translations[lang].partnersIntro }}</p>
+
+<h3 class="h5 mt-4 mb-3">{{ about.translations[lang].coordinatorTitle }}</h3>
+<div class="row g-3 mt-1">
+  {% for partner in about.partners.coordinator %}
+    <div class="col-md-6">
+      <div class="card card-cta h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ partner.name }}</h5>
+          <p class="card-text small mb-0">{{ partner.meta[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<h3 class="h5 mt-4 mb-3">{{ about.translations[lang].localPartnersTitle }}</h3>
+<div class="row g-3 mt-1">
+  {% for partner in about.partners.local %}
+    <div class="col-md-6">
+      <div class="card card-cta h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ partner.name }}</h5>
+          <p class="card-text small mb-0">{{ partner.meta[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<h3 class="h5 mt-4 mb-3">{{ about.translations[lang].supportPartnersTitle }}</h3>
+<div class="row g-3 mt-1">
+  {% for partner in about.partners.support %}
+    <div class="col-md-6">
+      <div class="card card-cta h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ partner.name }}</h5>
+          <p class="card-text small mb-0">{{ partner.meta[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
